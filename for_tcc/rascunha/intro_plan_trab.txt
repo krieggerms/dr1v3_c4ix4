@@ -7,3 +7,14 @@ Porte;
 Organização do Documento;
 
 O Banco Interamericano de Desenvolvimento (BID, ou em inglês, Inter-American Development Bank, IDB) é uma entidade financeira sediada em Washington, nos Estados Unidos, com uma subsidiária brasileira em Brasília-DF, além de representações em outros 25 países e escritórios de caráter regional nos continentes asiático e europeu. Conta com 48 países membros, e possuem diversos clientes de caráter público, como governos, estados e municípios, além de caráter privado, como empresas e organizações. Seu quarto e atual presidente é o diplomata e empresário colombiano Luis Alberto Moreno, eleito em 2005. Criada em 1959, é uma das principais e mais antigas do ramo, tendo como missão conceder financiamentos para projetos de diversos países da América Latina e Caribe, em prol do desenvolvimento social, econômico, ecológico, além de promover a integração econômica das regiões. Só em 2016 foram aprovados mais $9,3 bilhões de dólares em empréstimos.
+
+A ideia para a criação de uma instituição de apoio ao desenvolvimento da América Latina já vinha sido discutida desde 1890 na Primeira Conferência Internacional dos Estados Americanos, sediada em Washington, sendo um dos primeiros esforços propostos para a criação de um sistema Inter-Americano de cooperação, tendo finalmente nascido em 8 de abril de 1959 de uma iniciativa proposta pelo então presidente do Brasil Juscelino Kubitshek, junto a Organização dos Estados Americanos (OEA, ou em inglês, Organization of American States).
+
+Atualmente o BID conta com 48 países membros, divididos em 26 membros mututários que podem receber empréstimos, além de fonecer diretamente os bens e serviços necessários para os projetos, e outros 22 membros não mutuários, que não recebem empréstimos nem podem fornecer apoio, mas podem se beneficiar com as regras personalizadas para aquisições de diversos produtos.
+Os membros mutuários são divididos em grupos de financiamento, onde é definido uma porcentagem máxima para o valor investido.
+Grupo A - 60%: Argentina, Brasil, México e Venezuela.
+Grupo B - 70%: Chile, Colômbia e Peru.
+Grupo C - 80%: Bahamas, Barbados, Costa Rica, Jamaica, Panamá, Suriname, Trinidad e Tobago e Uruguai.
+Grupo D - 90%: Belize, Bolívia, República Dominicana, Equador, El Salvador, Guatemala, Guiana, Haiti, Honduras, Nicarágua e Paraguai.
+Países considerados mais "frágeis" recebem um percentual maior de financiamento, 90%, que é o máximo que o banco pode ofertar, e países considerados não tão frágeis recebem um percentual menor. Ainda há um bônus de 10% ao financiamento se esse projeto obtiver lucros de pessoas de baixa renda.
+Os membros não mutuários são: Áustria, Bélgica, Canadá, China, Croácia, Dinamarca, Finlândia, França, Alemanha, Israel, Itália, Japão, Coréia do Sul, Holanda, Noruega, Portugal, Eslovênia, Espanha, Suécia, Suiça, Reino Unido, e Estados Unidos.
