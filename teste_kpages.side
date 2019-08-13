@@ -1,0 +1,254 @@
+{
+  "id": "ea225ecc-a4b0-41cd-aeab-a940c2bd607b",
+  "version": "2.0",
+  "name": "teste_kpages",
+  "url": "http://tester.kpages.com.br",
+  "tests": [{
+    "id": "a088a17d-f956-4188-8a57-9d7ddd17ca46",
+    "name": "fazer_login",
+    "commands": [{
+      "id": "71eacb73-3df5-4786-8718-021391288065",
+      "comment": "",
+      "command": "open",
+      "target": "{url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8887a62-6e79-458e-80c4-5377c6d3664a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form",
+      "targets": [
+        ["css=.el-form", "css:finder"],
+        ["xpath=//div[@id='app']/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a4f963b-fbd6-47d0-aaed-360e9a83683b",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.el-form-item:nth-child(4) .el-input__inner", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8602e462-b05d-4b52-a173-3b1f99b21aca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-container",
+      "targets": [
+        ["css=.login-container", "css:finder"],
+        ["xpath=//div[@id='app']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad7771b2-dbbe-41e4-b008-c1a8ad73c510",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.el-form-item:nth-child(4) .el-input__inner", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "cb8a687c-63fa-4892-8edf-57bd8db9fc50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-button",
+      "targets": [
+        ["css=.el-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5df0fe99-e7df-471a-8dee-8d3652d1c85d",
+    "name": "cadastra_produto",
+    "commands": [{
+      "id": "18c5d415-d55f-4916-8dc6-2c2f8feaf7f4",
+      "comment": "Abrindo página...",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99e04df7-d6e8-42a0-81ac-1c06261e7637",
+      "comment": "Clicando no botão para adicionar um novo produto...",
+      "command": "click",
+      "target": "css=.el-icon-plus",
+      "targets": [
+        ["css=.el-icon-plus", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/div/div[2]/a/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03ff35d8-64eb-4f97-bc69-eac86118486f",
+      "comment": "Esperando o campo 'Descrição' estar presente...",
+      "command": "waitForElementPresent",
+      "target": "css=.el-col-11 .el-input__inner",
+      "targets": [
+        ["css=.el-col-11 .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "fb4abed3-89cb-42f9-bd44-4da65b62721b",
+      "comment": "Digitando 'J5' no campo 'Descrição'...",
+      "command": "type",
+      "target": "css=.el-col-11 .el-input__inner",
+      "targets": [
+        ["css=.el-col-11 .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "J5"
+    }, {
+      "id": "e5bcbf0a-00d6-45ef-b86c-64d750ea17b3",
+      "comment": "Clicando no campo para a escolha da marca...",
+      "command": "click",
+      "target": "css=.el-input--suffix > .el-input__inner",
+      "targets": [
+        ["css=.el-input--suffix > .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4926badb-15b1-4cc0-841f-661cba95d4fc",
+      "comment": "Selecionando a marca 'Samsung'...",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Samsung')]",
+      "targets": [
+        ["css=.hover > span", "css:finder"],
+        ["xpath=//li[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Samsung')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f7e1968-d715-4823-a410-61f674a10a90",
+      "comment": "Alterando o seletor de 'Habilitado'...",
+      "command": "click",
+      "target": "css=.el-switch__core",
+      "targets": [
+        ["css=.el-switch__core", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[3]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b502b82-5c49-4dae-bd89-80a856479946",
+      "comment": "Clicando no campo 'Quantidade'...",
+      "command": "click",
+      "target": "css=.el-input:nth-child(3) > .el-input__inner",
+      "targets": [
+        ["css=.el-input:nth-child(3) > .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48e979d2-8600-403b-92b9-dd9773e2b1b6",
+      "comment": "Digitando 100 no campo 'Quantidade'...",
+      "command": "type",
+      "target": "css=.el-input:nth-child(3) > .el-input__inner",
+      "targets": [
+        ["css=.el-input:nth-child(3) > .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "f6716918-8bd4-4585-88cb-776ffa098c4e",
+      "comment": "Clicando no campo 'Preço'...",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(5)",
+      "targets": [
+        ["css=.el-form-item:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "742af25e-23ca-4dd8-a402-56af882fdf7e",
+      "comment": "Digitando 700 no campo 'Preço'...",
+      "command": "type",
+      "target": "css=.el-col-3 .el-input__inner",
+      "targets": [
+        ["css=.el-col-3 .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "700"
+    }, {
+      "id": "bab5d744-3ca6-4d02-9b56-7903baa51ad1",
+      "comment": "Clicando no botão 'Cadastrar'...",
+      "command": "click",
+      "target": "css=.el-button--success > span",
+      "targets": [
+        ["css=.el-button--success > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[6]/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7403975a-f90d-465a-911c-be0ccbec697c",
+      "comment": "Focando no campo novo...",
+      "command": "click",
+      "target": "xpath=//td[contains(.,'J5')]",
+      "targets": [
+        ["css=.hover-row > .el-table_2_column_10", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/div[2]/div[3]/table/tbody/tr[11]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[11]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'J5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e951cd4c-9f14-4731-b62f-9c3072c4b150",
+      "comment": "Fim.",
+      "command": "echo",
+      "target": "Teste Concluído. Como podem ver no campo 'ID', ele está com o mesmo vazio.",
+      "targets": [],
+      "value": "#shownotification"
+    }]
+  }],
+  "suites": [{
+    "id": "475ec4b7-a835-4bd1-b338-df27ba8190a3",
+    "name": "logon",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a088a17d-f956-4188-8a57-9d7ddd17ca46"]
+  }, {
+    "id": "9b6ee819-33dc-49c5-a5f2-ac4427e231ae",
+    "name": "cadastro_produto",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5df0fe99-e7df-471a-8dee-8d3652d1c85d"]
+  }],
+  "urls": ["http://tester.kpages.com.br/"],
+  "plugins": []
+}
