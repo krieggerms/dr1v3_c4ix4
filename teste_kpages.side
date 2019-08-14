@@ -354,14 +354,26 @@
       "value": "30000"
     }, {
       "id": "e2baf61b-ff9c-468f-b3c8-e3f4efa08598",
-      "comment": "Alterando valor...",
+      "comment": "Preparando alteração de valor...",
       "command": "echo",
-      "target": "Alterando o valor de '1655.15' para '1'",
+      "target": "O valor será alterado de '1655.15' para '1'",
       "targets": [],
       "value": ""
     }, {
-      "id": "5c56bdf3-640d-4c58-8d43-f698b93549b3",
-      "comment": "Clicando no botão de voltar...",
+      "id": "f3d41d09-751b-4286-81fe-f5e7beaddefc",
+      "comment": "Digitando novo valor...",
+      "command": "type",
+      "target": "css=.el-col-3 .el-input__inner",
+      "targets": [
+        ["css=.el-col-3 .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "680a2ca0-57d7-4e70-a94e-82d25b475c72",
+      "comment": "Clicando no botão 'Voltar'...",
       "command": "click",
       "target": "css=.el-button--danger > span",
       "targets": [
@@ -372,10 +384,99 @@
       ],
       "value": ""
     }, {
-      "id": "300453a0-2450-411d-85ac-9510f096424e",
+      "id": "08c1b365-25e3-4df9-b93b-6a81a829bf21",
       "comment": "Fim.",
       "command": "echo",
-      "target": "Como podem ver, mesmo clicando em 'Voltar' ele salvou a alteração do seletor do 'Habilitado'.",
+      "target": "Como podem ver, após clicar em 'Editar', todos os produtos somem.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5dddd518-da64-48a1-a1c4-4fab423de0bf",
+    "name": "b#4: cadastra_produto_desq_quant",
+    "commands": [{
+      "id": "95000bbc-d753-4c48-af3d-6387c5e03e6e",
+      "comment": "Abrindo página...",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62acabd7-8930-4b89-9b00-5d87d40968c9",
+      "comment": "Clicando para adicionar um novo produto...",
+      "command": "click",
+      "target": "xpath=//div[@id='app']/div/div[2]/section/div/div/div[2]/a/button/i",
+      "targets": [
+        ["css=.el-icon-plus", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/div/div[2]/a/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c6e39cc-8667-48a3-9a05-b94ddfd495a0",
+      "comment": "Esperando o campo 'Descrição' estar presente...",
+      "command": "waitForElementPresent",
+      "target": "css=.el-col-11 .el-input__inner",
+      "targets": [
+        ["css=.el-col-11 .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b87c8f9c-97f8-4a90-bd12-ae7e35b1aa5a",
+      "comment": "Digitando 'J5' no campo 'Descrição'...",
+      "command": "type",
+      "target": "css=.el-col-11 .el-input__inner",
+      "targets": [
+        ["css=.el-col-11 .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "J5"
+    }, {
+      "id": "7d860012-3c45-4f82-b38f-6aac09f5bfb2",
+      "comment": "Clicando no campo 'Quantidade'...",
+      "command": "click",
+      "target": "css=.el-input:nth-child(3) > .el-input__inner",
+      "targets": [
+        ["css=.el-input:nth-child(3) > .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86fb494a-886e-42b3-89c8-2a3bd8461bed",
+      "comment": "Digitando 100 no campo 'Quantidade'...",
+      "command": "type",
+      "target": "css=.el-input:nth-child(3) > .el-input__inner",
+      "targets": [
+        ["css=.el-input:nth-child(3) > .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "9a92c7f0-0042-4af6-ba9b-78621a73a85b",
+      "comment": "Clicando no botão 'Cadastrar'...",
+      "command": "click",
+      "target": "css=.el-button--success > span",
+      "targets": [
+        ["css=.el-button--success > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[6]/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ace0d18-83da-4d7d-b303-70df4b145615",
+      "comment": "Fim.",
+      "command": "echo",
+      "target": "Como podem ver, todos os produtos sumiram.",
       "targets": [],
       "value": ""
     }]
@@ -389,11 +490,11 @@
     "tests": ["a088a17d-f956-4188-8a57-9d7ddd17ca46"]
   }, {
     "id": "9b6ee819-33dc-49c5-a5f2-ac4427e231ae",
-    "name": "cadastro_produto",
+    "name": "bugs",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["5df0fe99-e7df-471a-8dee-8d3652d1c85d"]
+    "tests": ["5df0fe99-e7df-471a-8dee-8d3652d1c85d", "0e476625-ae31-4029-9942-b4129d90ad44", "d58059e1-80e8-40ba-82e7-2168561283bd"]
   }],
   "urls": ["http://tester.kpages.com.br/"],
   "plugins": []
