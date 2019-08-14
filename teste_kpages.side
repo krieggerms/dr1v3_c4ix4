@@ -77,7 +77,7 @@
     }]
   }, {
     "id": "5df0fe99-e7df-471a-8dee-8d3652d1c85d",
-    "name": "cadastra_produto",
+    "name": "b#1: cadastra_produto_edicao",
     "commands": [{
       "id": "18c5d415-d55f-4916-8dc6-2c2f8feaf7f4",
       "comment": "Abrindo página...",
@@ -227,11 +227,157 @@
       "value": ""
     }, {
       "id": "e951cd4c-9f14-4731-b62f-9c3072c4b150",
-      "comment": "Fim.",
+      "comment": "Cadastro concluído.",
       "command": "echo",
-      "target": "Teste Concluído. Como podem ver no campo 'ID', ele está com o mesmo vazio.",
+      "target": "Cadastro concluído. Como podem ver no campo 'ID', ele está com o mesmo vazio.",
       "targets": [],
       "value": "#shownotification"
+    }, {
+      "id": "9b6ea6dc-a9e4-4673-a753-7b9283a4ae98",
+      "comment": "Clicando no botão de edição...",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[22]",
+      "targets": [
+        ["css=.current-row a > .el-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[22]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/div[2]/div[3]/table/tbody/tr[11]/td[7]/div/a/button", "xpath:idRelative"],
+        ["xpath=//tr[11]/td[7]/div/a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "655cedef-c617-4f43-abe4-a798584c00e1",
+      "comment": "Fim.",
+      "command": "echo",
+      "target": "Como podem ver, a tela para edição do produto está vazia.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0e476625-ae31-4029-9942-b4129d90ad44",
+    "name": "b#2: edita_produto_habilitado",
+    "commands": [{
+      "id": "69295172-cb0b-4604-ab09-ff5df5c314fd",
+      "comment": "Abrindo página...",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5db517ad-e92b-4c20-93f2-198c14a6c39d",
+      "comment": "Percebam que o campo 'Habilitado' está como 'Não'.",
+      "command": "echo",
+      "target": "Percebam que o campo 'Habilitado' está como 'Não'.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc5da083-50b4-4b1d-b560-9f6e427f5dc1",
+      "comment": "Clicando no botão para editar o primeiro produto...",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(1) .el-icon-edit",
+      "targets": [
+        ["css=.el-table__row:nth-child(1) .el-icon-edit", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/div[2]/div[3]/table/tbody/tr/td[7]/div/a/button/i", "xpath:idRelative"],
+        ["xpath=//td[7]/div/a/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1097b12-aa42-4100-9011-999eb3f80835",
+      "comment": "Esperando o campo 'Descrição' estar presente...",
+      "command": "waitForElementPresent",
+      "target": "css=.el-col-11 .el-input__inner",
+      "targets": [
+        ["css=.el-col-11 .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "41bf4ddc-94cd-4148-98ce-d6dbba45b20d",
+      "comment": "Seletor de 'Habilitado' está ativado.",
+      "command": "echo",
+      "target": "Seletor de 'Habilitado' está ativado.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e75d0774-76fb-4eef-9a22-b7112e491ea7",
+      "comment": "Clicando no botão de voltar...",
+      "command": "click",
+      "target": "css=.el-button--danger > span",
+      "targets": [
+        ["css=.el-button--danger > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[6]/div/a/button/span", "xpath:idRelative"],
+        ["xpath=//a/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91ba5455-8319-4dab-85f7-fd55d1eba693",
+      "comment": "Fim.",
+      "command": "echo",
+      "target": "Como podem ver, mesmo clicando em 'Voltar' ele salvou a alteração do seletor do 'Habilitado'.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d58059e1-80e8-40ba-82e7-2168561283bd",
+    "name": "b#3: edita_produto_valor",
+    "commands": [{
+      "id": "95a7c81c-6938-446b-9ad0-326714d9635e",
+      "comment": "Abrindo página...",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "108d97fd-d869-463d-b2ac-6cfc685996f8",
+      "comment": "Clicando no botão para editar o primeiro produto...",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(1) .el-icon-edit",
+      "targets": [
+        ["css=.el-table__row:nth-child(1) .el-icon-edit", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/div[2]/div[3]/table/tbody/tr/td[7]/div/a/button/i", "xpath:idRelative"],
+        ["xpath=//td[7]/div/a/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f489e65f-6a36-4ce2-9f0d-9a1311d5fa39",
+      "comment": "Esperando o campo 'Descrição' estar presente...",
+      "command": "waitForElementPresent",
+      "target": "css=.el-col-11 .el-input__inner",
+      "targets": [
+        ["css=.el-col-11 .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "e2baf61b-ff9c-468f-b3c8-e3f4efa08598",
+      "comment": "Alterando valor...",
+      "command": "echo",
+      "target": "Alterando o valor de '1655.15' para '1'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c56bdf3-640d-4c58-8d43-f698b93549b3",
+      "comment": "Clicando no botão de voltar...",
+      "command": "click",
+      "target": "css=.el-button--danger > span",
+      "targets": [
+        ["css=.el-button--danger > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/section/div/form/div[6]/div/a/button/span", "xpath:idRelative"],
+        ["xpath=//a/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "300453a0-2450-411d-85ac-9510f096424e",
+      "comment": "Fim.",
+      "command": "echo",
+      "target": "Como podem ver, mesmo clicando em 'Voltar' ele salvou a alteração do seletor do 'Habilitado'.",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
