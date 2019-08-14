@@ -494,7 +494,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["5df0fe99-e7df-471a-8dee-8d3652d1c85d", "0e476625-ae31-4029-9942-b4129d90ad44", "d58059e1-80e8-40ba-82e7-2168561283bd"]
+    "tests": ["5df0fe99-e7df-471a-8dee-8d3652d1c85d", "0e476625-ae31-4029-9942-b4129d90ad44", "d58059e1-80e8-40ba-82e7-2168561283bd", "5dddd518-da64-48a1-a1c4-4fab423de0bf"]
   }],
   "urls": ["http://tester.kpages.com.br/"],
   "plugins": []
