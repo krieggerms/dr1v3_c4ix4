@@ -1,0 +1,91 @@
+Olá Daniel,
+
+
+
+Agradecemos o seu interesse em fazer parte do nosso time!
+
+
+
+Você foi selecionado para a primeira etapa do nosso processo seletivo que consiste em uma etapa teste. Os aprovados nessa etapa serão chamados para a entrevista.
+
+
+
+A seguir te encaminhamos as instruções e o passo a passo para o teste.
+
+
+
+Qualquer dúvida, estamos à disposição
+
+
+
+Boa sorte!
+
+
+
+
+
+
+
+Teste Técnico para Tester #teamklickpages
+
+
+
+Nós criamos uma aplicação de teste com alguns bugs e inconsistências de propósito para avaliar sua capacidade de encontrá-los e de passar essa informação aos desenvolvedores.
+
+
+
+Alguns dos bugs são muito fáceis de se encontrar e alguns são bem difíceis, mas não vamos falar a quantidade total de bugs para dificultar um pouco mais :)
+
+
+
+Você pode acessar a aplicação de testes pela URL: http://tester.kpages.com.br
+
+
+
+
+
+Para acessar a aplicação os dados de acesso são os seguintes:
+
+
+
+Username: admin
+Senha: (Qualquer texto que tenha pelo menos 6 caracteres)
+
+
+
+
+O que vamos avaliar no seu teste:
+
+
+
+Sua capacidade de encontrar bugs na aplicação de teste
+A dificuldade para encontrar os bugs que você relatou
+Sua capacidade de escrever os bugs encontrados de maneira clara e objetiva
+Sua capacidade de descrever todo o fluxo necessário para reproduzir um bug
+
+
+
+
+O que faz você ganhar pontos a mais no seu teste:
+
+
+
+Criar testes automatizados para as funcionalidades da aplicação e que quebrem nos locais que você relatou os bugs, é permitido utilizar qualquer ferramenta de testes End-to-End, mas você deve dar todas as instruções necessárias para que nós possamos reproduzir os seus testes automatizados, por exemplo, como instalar a ferramenta e como utilizá-la, você pode escrever essas instruções em um arquivo README.md na raiz do seu projeto.
+Escrever os fluxos para reprodução dos bugs no padrão de User Stories e/ou Gherkin
+
+
+
+
+Para enviar suas respostas preencha o seguinte formulário: https://forms.gle/vuYR6ksnSioUfrpu7
+
+
+
+Você terá 7 dias para realizar, sendo a deadline de entrega até às 9h da segunda-feira que vem (19/08). Se finalizar antes, pode nos enviar.
+
+
+
+?Caso tenha qualquer dúvida, pode nos enviar que encaminhamos para o time de desenvolvedores.
+
+
+
+Aguardamos o seu teste!
