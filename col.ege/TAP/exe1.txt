@@ -1,0 +1,16 @@
+Descrever os Componentes do Business Intelligence. 
+
+	O processo de BI é composto dos seguintes componentes:
+	Fontes de Dados: Repositório onde se concentra a informação que vai ser extraída e analisada. Pode ser desde sites e redes sociais, até e-mails, áudios e vídeos.
+	Data Warehouse (DW): Do inglês, "Armazém de Dados", é para toda informação vai após ser extraída. É um repositório a parte do repositório comum transacional que é voltado para o analítico, isso é feito para que o sistema transacional não seja prejudicado por perda de desempenho.
+	OLAP: É o Processo que realiza a análise dos dados quando estes já estão inseridos no Data Warehouse.
+	Data Mining: Do inglês, "Mineração de Dados", é processo de aquisição de informações de diversas fontes possíveis.
+	ETL: Conjunto de ferramentas utilizadas para Extrair os dados da fonte, Transformar esses dados para uma melhor visualização e Carregá-los na base.
+	Ferramentas de Visualização: Ferramentas utilzadas para tranformar os dados carregados em uma forma gráfica para serem analisados e/ou apresentados.
+
+Relacionar as etapas de Entrada, Processamento e Saída de Dados. *
+A que demanda ou necessidade seu projeto atende?
+
+	Entrada: Os dados podem estar em diversas fontes como bases governamentais, e-mails, áudios, arquivos CSV/TXT, RSS, sites, redes sociais, banco de dados. Ali eles são adquiridos para posterior análise.
+	Tranformação: Após os dados serem adquiridos, eles são tranformados para uma melhor visualização, seja fazendo ajuste necessários (como trocar um código por uma informação correspondente, unindo endereços que estão fragmentados), como também removendo linhas que possuem erros ou invalidações.
+	Saída: Com os dados tranformados e estando na base recomendada, eles são posteriormente tranformados em gráficos ou tabelas para que ilustrem da melhor maneira a informação da qual eles se propõem a demonstrar.
